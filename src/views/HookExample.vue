@@ -1,9 +1,13 @@
 <template>
-  <div ref="example-element">{{ propertyComputed }}</div>
+  <div ref="example-element" class="container">
+    <h1>Hook Example</h1>
+    <b>Property:</b> {{ propertyComputed }}
+  </div>
 </template>
 
 <script>
 export default {
+  name: "HookExample",
   data() {
     return {
       property: "Example property.",

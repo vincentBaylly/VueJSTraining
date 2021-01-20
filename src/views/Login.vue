@@ -1,5 +1,5 @@
 <template>
-  <div id="login">
+  <div class="container">
     <h1>Login</h1>
     <input
       type="text"
@@ -48,13 +48,4 @@ export default {
 };
 </script>
 
-<style scoped>
-#login {
-  width: 500px;
-  border: 1px solid #cccccc;
-  background-color: #ffffff;
-  margin: auto;
-  margin-top: 200px;
-  padding: 20px;
-}
-</style>
+<style scoped></style>

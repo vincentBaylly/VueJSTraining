@@ -1,24 +1,46 @@
 import { createWebHistory, createRouter } from "vue-router";
-import LoginComponent from "./components/Login.vue";
-import SecureComponent from "./components/Secure.vue";
+import Home from "@/views/Home";
+import Contact from "@/views/Contact";
+import Register from "@/views/Register";
+import Login from "@/views/Login";
+import HookExample from "@/views/HookExample.vue";
 
 const routes = [
   {
+    path: "/home",
+    name: "Accueil",
+    component: Home,
+  },
+  {
     path: "/",
-    redirect: {
-      name: "login",
-    },
+    name: "Home",
+    component: Home,
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: Contact,
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: Register,
+  },
+  {
+    path: "/hook",
+    name: "hook",
+    component: HookExample,
   },
   {
     path: "/login",
-    name: "login",
-    component: LoginComponent,
+    name: "Login",
+    component: Login,
   },
-  {
-    path: "/secure",
-    name: "secure",
-    component: SecureComponent,
-  },
+  // {
+  //   path: "/about",
+  //   name: "About",
+  //   component: About.vue,
+  // },
 ];
 
 const router = createRouter({
